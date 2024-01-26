@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEME-MAKER</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="tools">
+      <canvas></canvas>
+      <div>
+        <input
+          type="range"
+          id="line-width"
+          min="1"
+          max="100"
+          value="5"
+          step="10"
+        />
+        <div>
+          <button id="mode-btn">🖌️</button>
+          <button id="erase-btn">🧼</button>
+          <input id="text-btn" type="text" class="textInput" placeholder="" />
+          <label for="text-btn" class="text-btn">📝</label>
+          <input id="file-btn" type="file" accept="image/*" />
+          <label for="file-btn" class="file-btn">📂</label>
+          <button id="reset-btn">🗑️</button>
+          <button id="save-btn">💾</button>
+        </div>
+      </div>
+    </div>
+    <div class="color-opt">
+      <div
+        class="color-option"
+        type="color"
+        style="background-color: #ff0000"
+        data-color="#FF0000"
+      ></div>
+      <div
+        class="color-option"
+        type="color"
+        style="background-color: #1ddb16"
+        data-color="#1DDB16"
+      ></div>
+      <div
+        class="color-option"
+        type="color"
+        style="background-color: #0100ff"
+        data-color="#0100FF"
+      ></div>
+      <div
+        class="color-option"
+        type="color"
+        style="background-color: #ffe400"
+        data-color="#FFE400"
+      ></div>
+      <div
+        class="color-option"
+        type="color"
+        style="background-color: #ffbb00"
+        data-color="#FFBB00"
+      ></div>
+      <div
+        class="color-option"
+        type="color"
+        style="background-color: #8041d9"
+        data-color="#8041D9"
+      ></div>
+      <div
+        class="color-option"
+        type="color"
+        style="background-color: #980000"
+        data-color="#980000"
+      ></div>
+      <div
+        class="color-option"
+        type="color"
+        style="background-color: #ff007f"
+        data-color="#FF007F"
+      ></div>
+      <div
+        class="color-option"
+        type="color"
+        style="background-color: #999999"
+        data-color="#999999"
+      ></div>
+      <div
+        class="color-option"
+        type="color"
+        style="background-color: #000000"
+        data-color="#000000"
+      ></div>
+      <div
+        class="color-option"
+        type="color"
+        style="background-color: #ffffff"
+        data-color="#ffffff"
+      ></div>
+      <input type="color" id="color" />
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
